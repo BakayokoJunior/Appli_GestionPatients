@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devbak.appli_gestionpatient.LoginController">
+   <children>
+      <ImageView fitHeight="586.0" fitWidth="996.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="main_form" prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <AnchorPane layoutX="65.0" layoutY="8.0" prefHeight="448.0" prefWidth="278.0" styleClass="left-form" stylesheets="@loginDesign.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="97.0" layoutY="168.0" size="8em" text="" wrappingWidth="134.39999999999998" />
+                  <Label layoutX="11.0" layoutY="196.0" prefHeight="60.0" prefWidth="305.0" text="Système de gestion des patients" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="346.0" prefHeight="439.0" prefWidth="352.0" styleClass="right-form" stylesheets="@loginDesign.css">
+               <children>
+                  <Label layoutX="55.0" layoutY="107.0" prefHeight="30.0" prefWidth="266.0" text="Bienvenue administrateur" textFill="#368981">
+                     <font>
+                        <Font name="Tahoma Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usertf" layoutX="55.0" layoutY="189.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="pwdtf" layoutX="55.0" layoutY="239.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button layoutX="40.0" layoutY="287.0" mnemonicParsing="false" onAction="#connecter" prefHeight="40.0" prefWidth="259.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="connexion" />
+                  <Button fx:id="close" layoutX="270.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="58.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="23.600000000000023" AnchorPane.topAnchor="14.0" />
+                  <Label fx:id="errorMgs" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="138.0" prefHeight="30.0" prefWidth="312.0" textFill="#b70b0b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <FontAwesomeIcon glyphName="CLOSE" layoutX="299.0" layoutY="32.0" size="1.2em" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
